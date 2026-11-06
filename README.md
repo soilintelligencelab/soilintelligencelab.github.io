@@ -48,7 +48,7 @@ Run `scripts/update-cv.sh` before each push, so the site carries the latest CV f
 The site lives in the lab's GitHub organization, in the repository
 [`soilintelligencelab/soilintelligencelab.github.io`](https://github.com/soilintelligencelab/soilintelligencelab.github.io)
 (Settings → Pages → Deploy from branch → `main` / root), and is served at `https://soilintelligencelab.github.io/`.
-Its own address keeps it apart from `phxtao.github.io`, Feng's personal site.
+Feng's old personal address, `phxtao.github.io`, now only redirects here, and the CV header links to this site.
 
 For a custom domain (e.g. `soilintelligencelab.org`), add a `CNAME` file with the domain and set `url`
 to that domain in `_config.yml` (`baseurl` stays `""`).
