@@ -1,0 +1,9 @@
+{%- assign p = include.pub -%}
+<li class="pub">
+  <span class="pub-title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+  <span class="pub-authors">{% include authors.html authors=p.authors %} ({{ p.year }})</span>
+  {% if p.venue %}<span class="pub-venue"><i>{{ p.venue }}</i>{% if p.details %} {{ p.details }}{% endif %}</span>{% endif %}
+  {% if include.full and p.summary %}<span class="pub-summary">{{ p.summary }}</span>{% endif %}
+  {% if p.award %}<span class="pub-award">★ {{ p.award }}</span>{% endif %}
+  {% if include.full and p.media %}<span class="pub-media">In the news: {% for m in p.media %}<a href="{{ m.url }}">{{ m.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</span>{% endif %}
+</li>

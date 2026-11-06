@@ -1,0 +1,269 @@
+# Publications, newest first (groups appear in the order they first occur).
+# Fields:
+#   year      group heading (2026, 2025, …)
+#   authors   * corresponding author, † co-first author
+#   title, venue, details (volume/pages), url
+#   selected  true → shown on the home page
+#   summary   one-line plain-language takeaway (optional)
+#   media     list of {label, url} press coverage — also feeds the Press page (optional)
+#   award     short note, e.g. a paper award (optional)
+# Lab members listed under `lab_authors` in _config.yml are bolded automatically.
+# Published work only: add a paper once it is accepted, not while it is under review.
+
+# ------------------------------------------------------------------------ 2026
+- year: 2026
+  authors: Tao, F.*, Houlton, B.Z.
+  title: "Optimizing carbon dioxide removal in agricultural soils: A new mechanistic model of enhanced rock weathering"
+  venue: Journal of Advances in Modeling Earth Systems
+  details: (accepted)
+  selected: true
+  summary: "COUSINE couples soil organic and inorganic carbon to quantify CO₂ removal by enhanced rock weathering. Validated against a field trial in the US Corn Belt, it shows how clay and organic acids, nitrogen fertiliser and climate limit how much CO₂ is removed in situ, and how fast."
+
+- year: 2026
+  authors: Xu, H., Fan, J., Tao, F.*†, Jiang, L., You, F., Houlton, B.Z., Sun, Y., Gomes, C., Luo, Y.
+  title: Biogeochemistry-Informed Neural Network (BINN v1.0) for improving accuracy of model prediction and scientific understanding of soil organic carbon storage
+  venue: Geoscientific Model Development
+  details: 19(14), 6777–6795
+  url: https://doi.org/10.5194/gmd-19-6777-2026
+  selected: true
+  summary: An end-to-end deep learning framework that maps environmental covariates to the parameters of a process-based model, enabling efficient multi-objective optimization with causal-inference capacity.
+  media:
+    - { label: Cornell Chronicle, url: "https://news.cornell.edu/stories/2026/07/soil-carbon-effectively-measured-new-efficient-ai-model" }
+
+- year: 2026
+  authors: Fan, J., Xu, H., Tao, F.†*, Nasim, M., Grimson, M., Luo, Y., Gomes, C.P.
+  title: "Scientifically-Interpretable Reasoning Network (ScIReN): Discovering hidden relationships in the carbon cycle and beyond"
+  venue: Proceedings of the AAAI Conference on Artificial Intelligence
+  details: 40(45), 38441–38450
+  url: https://doi.org/10.1609/aaai.v40i45.41185
+  selected: true
+  summary: Uses Kolmogorov–Arnold networks to reveal interpretable relationships between environmental features and process-model parameters — turning deep learning from a black box into a transparent one.
+
+- year: 2026
+  authors: Zhou, J., Quan, Q., Huang, W., Hanson, P.J., Ricciuto, D., Mayes, M.A., Griffiths, N.A., Salmon, V.G., Weber, S.E., Warren, J.M., Norby, R.J., McPartland, M.Y., Dusenge, M.E., Way, D., Jiang, L., Zhou, Y., Xu, H., Tao, F., Shi, X., Chen, W., Zhang, Y., Luo, Y.
+  title: Elevated CO₂ mitigated warming-enhanced carbon loss from northern peatland
+  venue: Science Advances
+  details: 12(44), eaek1491
+  url: https://doi.org/10.1126/sciadv.aek1491
+
+- year: 2026
+  authors: Wang, C., Xue, L., Reich, P.B., Peñuelas, J., Tao, F., Kuzyakov, Y.
+  title: Limited energy for microorganisms constrains carbon accrual in soil
+  venue: Nature Geoscience
+  details: 19(9), 1064–1071
+  url: https://doi.org/10.1038/s41561-026-02035-9
+  summary: Global evidence that energy limits soil microbial metabolism, restricting microbial growth and ultimately soil carbon accrual.
+
+- year: 2026
+  authors: Sun, S., Cotrufo, M.F., Viscarra Rossel, R.A., Mueller, C.W., …, Tao, F., …, An, Z., Chen, J.
+  title: Global hotspots of particulate organic carbon losses under climate change
+  venue: Nature Communications
+  details: 17, 4695
+  url: https://doi.org/10.1038/s41467-026-71321-2
+
+- year: 2026
+  authors: Cui, Y., Peng, S., Delgado-Baquerizo, M., Moorhead, D.L., Sinsabaugh, R.L., Terrer, C., Smith, T.P., Kuzyakov, Y., Peñuelas, J., Zhu, B., Tao, F., Hong, S., Chen, J., Rillig, M.C.
+  title: Productivity-driven decoupling of microbial carbon use efficiency and respiration across global soils
+  venue: Science Advances
+  details: 12(3), eadz5319
+  url: https://doi.org/10.1126/sciadv.adz5319
+
+- year: 2026
+  authors: Hu, J., Huang, Z., Sun, Z., Song, X., Huang, Y., Zamanian, K., Tao, F., Yang, F., Wen, H., Zhang, G.
+  title: Climate change leads to significant loss of soil inorganic carbon
+  venue: National Science Review
+  details: 13(5), nwag075
+  url: https://doi.org/10.1093/nsr/nwag075
+
+- year: 2026
+  authors: Tu, Y., Rafols, R., Xu, Y., Butler, N., Ababneh, L., Tao, F., Ramanathan, V., Houlton, B.Z., Liao, C.
+  title: Scaling up enhanced rock weathering for equitable climate change mitigation
+  venue: Communications Sustainability
+  details: 1, 32
+  url: https://doi.org/10.1038/s44458-026-00034-w
+
+- year: 2026
+  authors: Gang, C., Wei, N., Feng, C., Xu, H., Liu, H., Tao, F., Jiang, L., Xia, J., Sitch, S., Luo, Y.
+  title: Net primary productivity orchestrates uncertainty sources driving global soil organic carbon under land use change
+  venue: Communications Earth & Environment
+  details: 7, 285
+  url: https://doi.org/10.1038/s43247-026-03312-6
+
+- year: 2026
+  authors: Hui, D., Wan, S., Zhou, T., Xia, J., Tao, F., Huang, Y., Chen, J., Lu, X., Liao, C., Du, Z., Zhou, X., Niu, S., Luo, Y.
+  title: Advancing ecosystem ecology through innovative research methods and techniques
+  venue: Frontiers of Earth Science
+  details: 20(1), 1–20
+  url: https://doi.org/10.1007/s11707-026-1222-6
+
+# ------------------------------------------------------------------------ 2025
+- year: 2025
+  authors: Luo, Y., Wei, N., Lu, X., Zhou, Y., Tao, F., Quan, Q., Liao, C., Jiang, L., Xia, J., Huang, Y., Niu, S., Xu, X., Sun, Y., Zeng, N., Koven, C., Peng, L., Davis, S., Smith, P., You, F., Jiang, Y., Cheng, L., Houlton, B.
+  title: Large CO₂ removal potential of woody debris preservation in managed forests
+  venue: Nature Geoscience
+  details: 18(7), 675–681
+  url: https://doi.org/10.1038/s41561-025-01731-2
+  summary: A theoretical test of burying wood in soils as a scalable carbon dioxide removal method.
+  media:
+    - { label: Science Blog, url: "https://scienceblog.com/burying-wood-debris-could-remove-massive-co2-from-air/" }
+    - { label: Phys.org, url: "https://phys.org/news/2025-06-carbon-capture-wood-debris-forests.html" }
+    - { label: Cornell Chronicle, url: "https://news.cornell.edu/stories/2025/06/slow-global-warming-bury-wood-debris" }
+
+# ------------------------------------------------------------------------ 2024
+- year: 2024
+  authors: Tao, F.*, Houlton, B.Z., Huang, Y., Wang, Y.-P., Manzoni, S., Ahrens, B., Mishra, U., Jiang, L., Huang, X., Luo, Y.
+  title: Convergence in simulating global soil organic carbon by structurally different models after data assimilation
+  venue: Global Change Biology
+  details: 30(5), e17297
+  url: https://doi.org/10.1111/gcb.17297
+
+- year: 2024
+  authors: Huang, Y., Song, X., Wang, Y.-P., Canadell, J.G., Luo, Y., Ciais, P., Chen, A., Hong, S., Wang, Y., Tao, F., …, Niu, S., Zhang, G.-L.
+  title: Size, distribution, and vulnerability of the global soil inorganic carbon
+  venue: Science
+  details: 384, 233–239
+  url: https://doi.org/10.1126/science.adi7918
+  summary: A global assessment of soil inorganic carbon storage and its vulnerability to climate change.
+  media:
+    - { label: Phys.org, url: "https://phys.org/news/2024-04-reveals-giant-global-soil-carbon.html" }
+    - { label: The Conversation, url: "https://theconversation.com/trillions-of-tonnes-of-carbon-locked-in-soil-has-been-left-out-of-environmental-models-and-its-on-the-move-227597" }
+    - { label: People's Daily, url: "http://en.people.cn/n3/2024/0415/c90000-20156596.html" }
+
+- year: 2024
+  authors: He, X., Abs, E., Allison, S.D., Tao, F., Huang, Y., Manzoni, S., Abramoff, R., Bruni, E., Bowring, S., Chakrawal, A., …, Wang, Y.-P., Goll, D.S.
+  title: Emerging multiscale insights on microbial carbon use efficiency in the land carbon cycle
+  venue: Nature Communications
+  details: 15, 8010
+  url: https://doi.org/10.1038/s41467-024-52160-5
+
+- year: 2024
+  authors: Nyaupane, K., Mishra, U., Tao, F., Yeo, K., Riley, W.J., Hoffman, F.M., Gautam, S.
+  title: Observational benchmarks inform representation of soil organic carbon dynamics in land surface models
+  venue: Biogeosciences
+  details: 21(22), 5173–5183
+  url: https://doi.org/10.5194/bg-21-5173-2024
+
+- year: 2024
+  authors: Tao, F., Lehmann, J., Wang, Y.-P., Jiang, L., Ahrens, B., Viatkin, K., Manzoni, S., Houlton, B.Z., Huang, Y., Huang, X., Luo, Y.
+  title: "Reply to: Beyond microbial carbon use efficiency"
+  venue: National Science Review
+  details: 11(4), nwae058
+  url: https://doi.org/10.1093/nsr/nwae058
+
+- year: 2024
+  authors: Tao, F., Houlton, B.Z., Frey, S.D., Lehmann, J., Manzoni, S., Huang, Y., Jiang, L., Mishra, U., Hungate, B.A., …, Huang, X., Luo, Y.
+  title: "Reply to: Model uncertainty obscures major driver of soil carbon"
+  venue: Nature
+  details: 627, E4–E6
+  url: https://doi.org/10.1038/s41586-023-07000-9
+
+- year: 2024
+  authors: Tao, F., Houlton, B.Z.
+  title: Inorganic and organic synergies in enhanced weathering to promote carbon dioxide removal
+  venue: Global Change Biology
+  details: 30, e17132
+  url: https://doi.org/10.1111/gcb.17132
+
+# ------------------------------------------------------------------------ 2023
+- year: 2023
+  authors: Tao, F., Huang, Y., Hungate, B.A., Manzoni, S., Frey, S.D., Schmidt, M.W.I., Reichstein, M., Carvalhais, N., Ciais, P., Jiang, L., Lehmann, J., Wang, Y.-P., Houlton, B.Z., …, Huang, X., Luo, Y.
+  title: Microbial carbon use efficiency promotes global soil carbon storage
+  venue: Nature
+  details: 618, 981–985
+  url: https://doi.org/10.1038/s41586-023-06042-3
+  selected: true
+  summary: The first global-scale measure of the relative importance of microbial processes in the soil carbon cycle — microbial carbon use efficiency matters at least four times more than any other process, including decomposition and plant input.
+  award: Best Student Paper, Sino-Ecologists Association Overseas (Sino-Eco) 2023
+  media:
+    - { label: Phys.org, url: "https://phys.org/news/2023-05-microorganisms-key-carbon-soils.html" }
+    - { label: Technology Networks, url: "https://www.technologynetworks.com/applied-sciences/news/microbes-are-essential-for-determining-how-much-carbon-is-stored-in-the-soil-373958" }
+    - { label: Cornell Chronicle, url: "https://news.cornell.edu/stories/2023/05/microbes-key-sequestering-carbon-soil" }
+    - { label: VBiO (German), url: "https://www.vbio.de/aktuelles/details/nachhaltigkeit-klima/mikroorganismen-sind-entscheidend-fuer-die-speicherung-von-kohlenstoff-in-boeden" }
+    - { label: Forskning.se (Swedish), url: "https://www.forskning.se/2023/05/25/svampar-och-bakterier-bast-pa-att-binda-kol/" }
+    - { label: Tsinghua News (Chinese), url: "https://www.tsinghua.edu.cn/info/2965/105232.htm" }
+
+- year: 2023
+  authors: Liao, C., Lu, X., Huang, Y., Tao, F., Lawrence, D.M., Koven, C.D., Oleson, K.W., Wieder, W.R., Kluzek, E., Huang, X., Luo, Y.
+  title: Matrix approach to accelerate spin-up of CLM5
+  venue: Journal of Advances in Modeling Earth Systems
+  details: 15(8), e2023MS003625
+  url: https://doi.org/10.1029/2023MS003625
+
+- year: 2023
+  authors: Ma, S., Jiang, L., Wilson, R.M., Chanton, J., Niu, S., Iversen, C.M., Malhotra, A., Jiang, J., Huang, Y., Lu, X., Shi, Z., Tao, F., Liang, J., Ricciuto, D., Hanson, P.J., Luo, Y.
+  title: Thermal acclimation of plant photosynthesis and autotrophic respiration in a northern peatland
+  venue: "Environmental Research: Climate"
+  details: 2(2), 025003
+  url: https://doi.org/10.1088/2752-5295/acc67e
+
+- year: 2023
+  authors: Hou, E., Ma, S., Huang, Y., Zhou, Y., Kim, H.-S., López-Blanco, E., Jiang, L., Xia, J., Tao, F., Williams, C., Williams, M., Ricciuto, D., Hanson, P.J., Luo, Y.
+  title: Across-model spread and shrinking in predicting peatland carbon dynamics under global change
+  venue: Global Change Biology
+  details: 29, 2759–2775
+  url: https://doi.org/10.1111/gcb.16643
+
+# ------------------------------------------------------------------------ 2022
+- year: 2022
+  authors: Liao, C., Huang, W., Wells, J., Zhao, R., Allen, K., Hou, E., Huang, X., Qiu, H., Tao, F., Jiang, L., Aguilos, M., Lin, L., Huang, X., Luo, Y.
+  title: Microbe–iron interactions control lignin decomposition in soil
+  venue: Soil Biology and Biochemistry
+  details: 173, 108803
+  url: https://doi.org/10.1016/j.soilbio.2022.108803
+
+- year: 2022
+  authors: Luo, Y., Huang, Y., Sierra, C.A., Xia, J., Ahlström, A., Chen, Y., Hararuk, O., Hou, E., Jiang, L., Liao, C., Lu, X., Shi, Z., Smith, B., Tao, F., Wang, Y.-P.
+  title: Matrix approach to land carbon cycle modeling
+  venue: Journal of Advances in Modeling Earth Systems
+  details: 14(7), e2022MS003008
+  url: https://doi.org/10.1029/2022MS003008
+
+- year: 2022
+  authors: Tao, F., Luo, Y.
+  title: PROcess-guided deep learning and DAta-driven modelling (PRODA)
+  venue: "Book chapter in Luo, Y. & Smith, B. (Eds.), Land Carbon Cycle Modeling: Matrix Approach, Data Assimilation, and Ecological Forecasting. Taylor & Francis"
+  url: https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9780429155659-47/process-guided-deep-learning-data-driven-modelling-proda-feng-tao-yiqi-luo
+
+- year: 2022
+  authors: Tao, F.
+  title: Bayesian statistics and Markov chain Monte Carlo method in data assimilation
+  venue: "Book chapter in Luo, Y. & Smith, B. (Eds.), Land Carbon Cycle Modeling: Matrix Approach, Data Assimilation, and Ecological Forecasting. Taylor & Francis"
+
+- year: 2022
+  authors: Tao, F.
+  title: "Practice 10: Deep learning to optimize parametrization of CLM5"
+  venue: "Book chapter in Luo, Y. & Smith, B. (Eds.), Land Carbon Cycle Modeling: Matrix Approach, Data Assimilation, and Ecological Forecasting. Taylor & Francis"
+
+# ------------------------------------------------------------------------ 2021
+- year: 2021
+  authors: Zhang, Z., Zhang, H., Cui, Z., Tao, F., Chen, Z., Chang, Y., Magliulo, V., Wohlfahrt, G., Zhao, D.
+  title: Global consistency in response of terrestrial ecosystem respiration to temperature
+  venue: Agricultural and Forest Meteorology
+  details: 308–309, 108576
+  url: https://doi.org/10.1016/j.agrformet.2021.108576
+
+# ------------------------------------------------------------------------ 2020
+- year: 2020
+  authors: Tao, F., Zhou, Z., Huang, Y., Li, Q., Lu, X., Ma, S., Huang, X., Liang, Y., Hugelius, G., Jiang, L., Doughty, R., Ren, Z., Luo, Y.
+  title: Deep learning optimizes data-driven representation of soil organic carbon in Earth system model over the conterminous United States
+  venue: Frontiers in Big Data
+  details: 3, 17
+  url: https://doi.org/10.3389/fdata.2020.00017
+  selected: true
+  summary: One of the first studies to fuse deep learning with a process-based model to understand the soil carbon cycle.
+
+# ------------------------------------------------------------------------ 2019
+- year: 2019
+  authors: Zhang, Z., Wang, W., Qi, J., Zhang, H., Tao, F., Zhang, R.
+  title: Priming effects of soil organic matter decomposition with addition of different carbon substrates
+  venue: Journal of Soils and Sediments
+  details: 19, 1171–1178
+  url: https://doi.org/10.1007/s11368-018-2103-3
+
+# ------------------------------------------------------------------------ 2018
+- year: 2018
+  authors: Zhang, Z., Zhang, R., Zhou, Y., Cescatti, A., Wohlfahrt, G., Sun, M., Zhang, H., Qi, J., Zhu, J., Magliulo, V., Tao, F., Chen, G.
+  title: A temperature threshold to identify the driving climate forces of the respiratory process in terrestrial ecosystems
+  venue: European Journal of Soil Biology
+  details: 89, 1–8
+  url: https://doi.org/10.1016/j.ejsobi.2018.08.001

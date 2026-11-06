@@ -1,0 +1,71 @@
+---
+layout: default
+title: people
+permalink: /people/
+---
+{% assign pi = site.data.people.pi %}
+<article class="wrap page">
+  <h1 class="page-title">Lab members</h1>
+
+  <section class="pi">
+    <img src="{{ pi.photo | relative_url }}" alt="Portrait of {{ pi.name }}">
+    <div>
+      <h2>{{ pi.name }} <span class="native">{{ pi.name_native }}</span></h2>
+      <p class="pi-role">{{ pi.role }}<br><span>{{ pi.title }}, {{ site.institution }}</span></p>
+      <p>Feng works at the interface of soil carbon science, mechanistic modelling and AI to understand the global soil carbon cycle and its response to climate change. Before joining NTU as a Nanyang Assistant Professor in 2026, Feng was an Assistant Professor in the Department of Informatics and Intelligent Systems and the Institute of Energy and the Environment (co-hire) at the Pennsylvania State University (2025–2026), and an Eric &amp; Wendy Schmidt AI in Science Postdoctoral Fellow in Ecology &amp; Evolutionary Biology at Cornell University (2023–2025), working with <a href="https://cals.cornell.edu/benjamin-z-houlton">Ben Houlton</a> on AI for scalable enhanced rock weathering. In 2019, Feng was a visiting fellow at the Global Soil Partnership Secretariat of the UN Food and Agriculture Organization in Rome, mapping the global potential for soil organic carbon sequestration.</p>
+      <p>Feng received a Ph.D. with honors from the Department of Earth System Science, Tsinghua University (2023), advised by <a href="https://cals.cornell.edu/yiqi-luo">Yiqi Luo</a> and <a href="http://faculty.dess.tsinghua.edu.cn/huangxiaomeng/zh_CN/index.htm">Xiaomeng Huang</a>, including a joint Ph.D. period at the Max Planck Institute for Biogeochemistry in Jena (2021–2022) with Markus Reichstein and Marion Schrumpf. Feng holds a B.Sc. with honors in Environmental Science and Engineering from Sun Yat-sen University (2018).</p>
+      <p class="pi-links">
+        <a href="mailto:{{ pi.email }}">{{ pi.email }}</a>
+        {% for l in pi.links %}<a href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.label }}</a>{% endfor %}
+      </p>
+    </div>
+  </section>
+
+  <h2 class="section-title">Current members</h2>
+  {% if site.data.people.members.size > 0 %}
+  <ul class="members">
+    {% for m in site.data.people.members %}
+    <li class="member">
+      {% if m.photo %}
+        <img src="{{ m.photo | relative_url }}" alt="Portrait of {{ m.name }}">
+      {% else %}
+        {% assign parts = m.name | split: " " %}
+        <span class="initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+      {% endif %}
+      <span class="member-name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</span>
+      <span class="member-role">{{ m.role }}</span>
+      {% if m.note %}<span class="member-note">{{ m.note }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="empty-team">
+    <p>The lab is just getting started, and we are building the founding team now. If you want to work on soil carbon, carbon dioxide removal and AI, we would love to hear from you.</p>
+    <p><a class="button" href="{{ '/openings/' | relative_url }}">See openings →</a></p>
+  </div>
+  {% endif %}
+
+  {% if site.data.people.alumni.size > 0 %}
+  <h2 class="section-title">Past lab members</h2>
+  <table class="alumni">
+    <thead><tr><th>Name</th><th>Role in lab</th><th>Years</th><th>Now</th></tr></thead>
+    <tbody>
+    {% for a in site.data.people.alumni %}
+      <tr><td>{{ a.name }}</td><td>{{ a.role }}</td><td>{{ a.years }}</td><td>{{ a.now }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  {% if site.data.people.mentored.size > 0 %}
+  <h2 class="section-title">Students mentored before the lab</h2>
+  <table class="alumni">
+    <thead><tr><th>Name</th><th>Role</th><th>Years</th><th>Topic</th></tr></thead>
+    <tbody>
+    {% for a in site.data.people.mentored %}
+      <tr><td>{{ a.name }}</td><td>{{ a.role }}</td><td>{{ a.years }}</td><td>{{ a.topic }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</article>

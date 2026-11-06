@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-name">{{ site.title }}</p>
+      <p>{% for line in site.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+      <p class="footer-logos">
+        <a href="https://www.ntu.edu.sg/"><img src="{{ '/assets/img/logos/ntu-reverse.svg' | relative_url }}" alt="Nanyang Technological University, Singapore" width="121" height="44"></a>
+        <a href="https://www.ntu.edu.sg/ase"><img src="{{ '/assets/img/logos/ase-white.svg' | relative_url }}" alt="Asian School of the Environment" width="154" height="34"></a>
+      </p>
+    </div>
+    <div>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p class="footer-links">
+        <a href="{{ site.social.scholar }}">Google Scholar</a>
+        <a href="{{ site.social.orcid }}">ORCID</a>
+        <a href="{{ site.social.github }}">GitHub</a>
+        <a href="{{ site.social.linkedin }}">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+  <div class="wrap footer-base">© {{ site.time | date: "%Y" }} {{ site.title }} · {{ site.department }}, {{ site.institution }}</div>
+</footer>

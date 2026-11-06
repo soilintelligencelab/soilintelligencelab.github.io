@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="brand-mark" src="{{ '/assets/img/mark.png' | relative_url }}" alt="" width="44" height="44">
+      <span class="brand-text">
+        <span class="brand-name">{{ site.title }}</span>
+        <span class="brand-inst">{{ site.institution }}</span>
+      </span>
+    </a>
+    <div class="inst-logos">
+      <a href="https://www.ntu.edu.sg/"><img class="logo-ntu" src="{{ '/assets/img/logos/ntu.svg' | relative_url }}" alt="Nanyang Technological University, Singapore" width="132" height="48"></a>
+      <a href="https://www.ntu.edu.sg/ase"><img class="logo-ase" src="{{ '/assets/img/logos/ase.svg' | relative_url }}" alt="Asian School of the Environment" width="172" height="38"></a>
+    </div>
+  </div>
+  <div class="nav-row">
+    <nav class="wrap site-nav" aria-label="Main">
+      {% for item in site.nav %}
+        {% if item.url == "/tools/" and site.tools_public != true %}{% continue %}{% endif %}
+        {% assign active = false %}
+        {% if item.url == "/" %}
+          {% if page.url == "/" or page.url == "/index.html" %}{% assign active = true %}{% endif %}
+        {% elsif page.url contains item.url %}
+          {% assign active = true %}
+        {% endif %}
+        <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

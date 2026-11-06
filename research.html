@@ -1,0 +1,42 @@
+---
+layout: default
+title: research
+permalink: /research/
+---
+<article class="wrap page">
+  <h1 class="page-title">Research</h1>
+  <p class="lede">Key questions about the soil carbon cycle — how carbon forms, how long it persists, and how organic and inorganic carbon respond to environmental change and land management — remain unresolved. That gap keeps science from informing the policy and industry that need verifiable methods for soil carbon sequestration. We work to close it.</p>
+
+  <div class="approach">
+    <div><span class="approach-k">Mechanistic models</span><p>Process-based soil and land carbon models, from soil columns to Earth system models.</p></div>
+    <div><span class="approach-k">Big data</span><p>Global soil profiles, radiocarbon, field trials and remote sensing, brought together through data assimilation.</p></div>
+    <div><span class="approach-k">AI</span><p>Process-guided, interpretable machine learning that learns mechanisms instead of just fitting patterns.</p></div>
+  </div>
+
+  {% for t in site.data.research %}
+  <section class="theme-detail" id="{{ t.id }}">
+    <div class="theme-head">
+      {% include icon.html name=t.icon %}
+      <span class="theme-num">0{{ forloop.index }}</span>
+    </div>
+    <div>
+      <h2>{{ t.title }}</h2>
+      <p class="theme-short">{{ t.short }}</p>
+      <p>{{ t.body }}</p>
+      <h3 class="mini">Current directions</h3>
+      <ul>{% for topic in t.topics %}<li>{{ topic }}</li>{% endfor %}</ul>
+      {% assign theme_tools = site.data.tools | where_exp: "tool", "tool.themes contains t.id" %}
+      {% if theme_tools.size > 0 and site.tools_public %}
+      <h3 class="mini">Try it</h3>
+      <ul class="reading tools-list">{% for tool in theme_tools %}<li><a href="{{ tool.url | relative_url }}">{{ tool.title }} — {{ tool.short | downcase }}</a></li>{% endfor %}</ul>
+      {% endif %}
+      {% if t.papers %}
+      <h3 class="mini">Read more</h3>
+      <ul class="reading">{% for p in t.papers %}<li>{% if p.url %}<a href="{{ p.url }}">{{ p.label }}</a>{% else %}<span class="no-link">{{ p.label }}</span>{% endif %}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <p class="aside">For an overview of our research, watch Feng's talk at the <a href="https://youtu.be/TZEuOSaP9uQ">Climate Change AI seminar</a>.</p>
+</article>

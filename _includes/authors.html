@@ -1,0 +1,6 @@
+{%- assign authors = include.authors -%}
+{%- for name in site.lab_authors -%}
+  {%- capture bold -%}<b>{{ name }}</b>{%- endcapture -%}
+  {%- assign authors = authors | replace: name, bold -%}
+{%- endfor -%}
+{{ authors }}

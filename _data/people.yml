@@ -1,0 +1,52 @@
+# Lab members. Photos go in assets/img/people/ (square-ish, ~600px).
+# Members without a photo get an initials tile automatically.
+
+pi:
+  name: Feng Tao
+  name_native: 陶鳳
+  role: Principal Investigator
+  title: Nanyang Assistant Professor, Asian School of the Environment
+  photo: assets/img/feng-tao.jpg
+  email: feng.tao@ntu.edu.sg
+  links:
+    - { label: Google Scholar, url: "https://scholar.google.com/citations?user=BlNzWiUAAAAJ" }
+    - { label: ORCID, url: "https://orcid.org/0000-0001-6105-860X" }
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/feng-tao-626a44191" }
+    - { label: CV, url: "/assets/pdf/cv-fengtao.pdf" } # copied from ~/GitHub/CV-Latex by scripts/update-cv.sh
+  # honors and service are kept for reference only; the People page does not show them
+  honors:
+    - { year: 2026, text: "Nanyang Assistant Professorship, Nanyang Technological University" }
+    - { year: 2025, text: "Outstanding PhD Thesis in the Beijing Region (2024)" }
+    - { year: 2023, text: "Eric & Wendy Schmidt AI in Science Postdoctoral Fellowship" }
+    - { year: 2023, text: "“Xueshu Xinxiu” — Ten Outstanding Graduate Researchers, Tsinghua University" }
+    - { year: 2023, text: "Outstanding PhD Thesis, Tsinghua University" }
+    - { year: 2023, text: "Best Student Paper, Sino-Ecologists Association Overseas (Sino-Eco)" }
+    - { year: 2021, text: "Early Career Presentation Award, International Soil Modelling Consortium (ISMC)" }
+  service:
+    - { year: 2025–2028, text: "Early Career Representative, Scientific Steering Committee, AIMES Land Data Assimilation Working Group" }
+    - { year: 2026, text: "Guest Editor, <i>The Innovation Geoscience</i> — Microbial Carbon and Nutrient Use Efficiency under Global Change" }
+    - { year: 2025, text: "Leading Guest Editor, <i>Biogeochemistry</i> — Advances in Land Carbon Cycle Modeling" }
+    - { year: 2025, text: "Guest Editor, <i>Agriculture, Ecosystems &amp; Environment</i> — agricultural management and soil carbon cycling" }
+    - { year: 2024–2026, text: "Session convener, AGU Fall Meeting and ESA Annual Meeting — land carbon cycle modeling; soils as a climate solution" }
+
+# Current members, in the order they should appear.
+# Example:
+#   - name: Jane Doe
+#     role: PhD student            # or Postdoctoral fellow, Research associate, Visiting scholar, Intern…
+#     photo: assets/img/people/jane-doe.jpg   # optional
+#     note: Soil radiocarbon & turnover        # optional, one line
+#     url: https://…                           # optional
+members: []
+
+# Former members, newest first.
+# Example:
+#   - { name: Jane Doe, role: Postdoc, years: 2026–2028, now: "Asst. Prof., Somewhere University" }
+alumni: []
+
+# Students Feng mentored before the lab was founded.
+mentored:
+  - { name: Akshaya Shyamsundar Rekha, role: "Undergraduate, Penn State (Honors Option)", years: "2026", topic: "Carbon footprint of AI" }
+  - { name: Kevin Toepelt, role: "Undergraduate, Cornell", years: "2025", topic: "Transfer learning" }
+  - { name: Natalia Butler, role: "PhD student, Cornell (rotation)", years: "2024", topic: "Modeling enhanced rock weathering" }
+  - { name: Joshua Fan, role: "PhD student, Cornell (co-mentored with Carla P. Gomes)", years: "2023–2026", topic: "Biogeochemistry-Informed Neural Networks; ScIReN" }
+  - { name: Haodi Xu, role: "PhD student, Cornell (co-mentored with Yiqi Luo)", years: "2023–", topic: "Biogeochemistry-Informed Neural Networks (BINN)" }

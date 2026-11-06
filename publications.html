@@ -1,0 +1,19 @@
+---
+layout: default
+title: publications
+permalink: /publications/
+---
+<article class="wrap page">
+  <h1 class="page-title">Publications</h1>
+  <p class="lede">Lab members in bold · <b>*</b> corresponding author · <b>†</b> co-first author. For the most up-to-date list, see <a href="{{ site.social.scholar }}">Google Scholar</a>.</p>
+
+  {% assign by_year = site.data.publications | group_by: "year" %}
+  {% for group in by_year %}
+  <section class="pub-year">
+    <h2>{{ group.name }}</h2>
+    <ul class="pubs">
+      {% for p in group.items %}{% include pub.html pub=p full=true %}{% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</article>

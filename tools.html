@@ -1,0 +1,20 @@
+---
+layout: default
+title: tools
+permalink: /tools/
+---
+<article class="wrap page">
+  <h1 class="page-title">Tools</h1>
+  <p class="lede">Interactive versions of our models, for farmers, practitioners and scientists who want to explore the possibilities themselves.</p>
+
+  {% for t in site.data.tools %}
+  <a class="tool-card" href="{{ t.url | relative_url }}">
+    <div>
+      <h2>{{ t.title }}</h2>
+      <p class="theme-short">{{ t.short }}</p>
+      <p>{{ t.body }}</p>
+    </div>
+    <span class="recruit-arrow" aria-hidden="true">→</span>
+  </a>
+  {% endfor %}
+</article>

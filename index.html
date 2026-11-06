@@ -1,0 +1,54 @@
+---
+layout: default
+title: home
+---
+<section class="hero">
+  <img src="{{ '/assets/img/hero.svg' | relative_url }}" alt="Illustrated soil profile: grasses at the surface, dark organic horizons fading into reddish subsoil and pale weathered rock, crossed by roots and a network of data nodes.">
+</section>
+
+<section class="wrap intro">
+  <p class="statement">We study the soil carbon cycle — the largest carbon pool on land — by fusing <em>mechanistic models</em>, <em>big data</em> and <em>AI</em>, to find verifiable, gigaton-scale pathways for removing carbon dioxide from the atmosphere.</p>
+  <div class="intro-side">
+    <p>Soils hold more carbon than the atmosphere and vegetation combined, as both organic matter and inorganic minerals. How that carbon forms, how long it persists, and how it responds to a changing climate and to management remain open questions — and they stand between climate science and credible soil-based climate solutions.</p>
+    <p>The Soil Intelligence Lab, led by <a href="{{ '/people/' | relative_url }}">Feng Tao</a> at the {{ site.department }}, {{ site.institution }}, builds the process-guided AI tools, global data syntheses and models needed to answer them.</p>
+    <p class="more"><a href="{{ '/research/' | relative_url }}">Our research →</a></p>
+  </div>
+</section>
+
+<section class="wrap">
+  <a class="recruit" href="{{ '/openings/' | relative_url }}">
+    <span class="recruit-tag">Join us</span>
+    <span>We are recruiting PhD students, postdoctoral fellows, research associates, interns and visiting scholars.</span>
+    <span class="recruit-arrow" aria-hidden="true">→</span>
+  </a>
+</section>
+
+<section class="wrap section">
+  <h2 class="section-title">Research</h2>
+  <div class="themes">
+    {% for t in site.data.research %}
+    <a class="theme" href="{{ '/research/' | relative_url }}#{{ t.id }}">
+      {% include icon.html name=t.icon %}
+      <span class="theme-num">0{{ forloop.index }}</span>
+      <h3>{{ t.title }}</h3>
+      <p>{{ t.short }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section two-col">
+  <div>
+    <h2 class="section-title">News</h2>
+    {% include news-list.html limit=4 %}
+    <p class="more"><a href="{{ '/news/' | relative_url }}">All news →</a></p>
+  </div>
+  <div>
+    <h2 class="section-title">Selected publications</h2>
+    <ul class="pubs compact">
+      {% assign selected = site.data.publications | where: "selected", true %}
+      {% for p in selected limit: 4 %}{% include pub.html pub=p %}{% endfor %}
+    </ul>
+    <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+  </div>
+</section>

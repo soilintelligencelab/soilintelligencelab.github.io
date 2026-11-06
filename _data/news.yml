@@ -1,0 +1,37 @@
+# News, newest first. `date` is free text ("Oct 2026", "2026"); `text` accepts inline Markdown.
+
+- date: "2026"
+  text: "The **Soil Intelligence Lab** opens at the Asian School of the Environment, NTU Singapore, supported by a Nanyang Assistant Professorship to build PASCA — a process-guided, AI-assisted soil carbon foundation model for verifiable carbon dioxide removal. We are [recruiting](/openings/)!"
+
+- date: "Dec 2026"
+  text: "Feng co-convenes two sessions at AGU 2026 in San Francisco: *Advances in land carbon cycle modeling* and *Advances in soil carbon sequestration: processes, management, and scalable storage*."
+
+- date: "Oct 2026"
+  text: "**COUSINE**, our coupled soil inorganic–organic carbon model for enhanced rock weathering, is accepted in *Journal of Advances in Modeling Earth Systems*."
+
+- date: "Jul 2026"
+  text: "**BINN v1.0**, our Biogeochemistry-Informed Neural Network for soil organic carbon, is published in [*Geoscientific Model Development*](https://doi.org/10.5194/gmd-19-6777-2026), covered by the [Cornell Chronicle](https://news.cornell.edu/stories/2026/07/soil-carbon-effectively-measured-new-efficient-ai-model)."
+
+- date: "Jul 2026"
+  text: "Energy limitation of soil microbes constrains carbon accrual — new paper in [*Nature Geoscience*](https://doi.org/10.1038/s41561-026-02035-9)."
+
+- date: "2026"
+  text: "Feng serves as guest editor for *The Innovation Geoscience* collection on microbial carbon and nutrient use efficiency under global change."
+
+- date: "Jan 2026"
+  text: "**ScIReN**, a scientifically interpretable reasoning network for discovering hidden relationships in the carbon cycle, is presented at [AAAI 2026](https://doi.org/10.1609/aaai.v40i45.41185)."
+
+- date: "Dec 2025"
+  text: "Feng presents the process-guided, AI-assisted soil carbon foundation model at AGU 2025 in New Orleans."
+
+- date: "2025"
+  text: "Feng's PhD thesis is named an Outstanding PhD Thesis in the Beijing Region, and Feng joins the AIMES Land Data Assimilation Working Group's Scientific Steering Committee as Early Career Representative."
+
+- date: "Jun 2025"
+  text: "Burying woody debris in managed forests could remove large amounts of CO₂ — [*Nature Geoscience*](https://doi.org/10.1038/s41561-025-01731-2), covered by [Phys.org](https://phys.org/news/2025-06-carbon-capture-wood-debris-forests.html) and the [Cornell Chronicle](https://news.cornell.edu/stories/2025/06/slow-global-warming-bury-wood-debris)."
+
+- date: "Apr 2024"
+  text: "New paper in [*Science*](https://doi.org/10.1126/science.adi7918) maps the size, distribution and vulnerability of global soil inorganic carbon."
+
+- date: "May 2023"
+  text: "Our [*Nature*](https://doi.org/10.1038/s41586-023-06042-3) paper shows that microbial carbon use efficiency promotes global soil carbon storage. It later received the Sino-Eco Best Student Paper award."

@@ -1,0 +1,23 @@
+---
+layout: default
+title: press
+permalink: /press/
+---
+<article class="wrap page">
+  <h1 class="page-title">Press</h1>
+  <p class="lede">Coverage of our research in the media.</p>
+
+  {% for p in site.data.publications %}{% if p.media %}
+  <section class="press-item">
+    <div class="press-year">{{ p.year }}</div>
+    <div>
+      <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+      <p class="press-venue"><i>{{ p.venue }}</i></p>
+      {% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
+      <ul class="press-outlets">
+        {% for m in p.media %}<li><a href="{{ m.url }}">{{ m.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}{% endfor %}
+</article>

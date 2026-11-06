@@ -1,0 +1,13 @@
+# Interactive tools, shown on /tools/. `url` is a page of this site; `themes` (ids in research.yml) link the tool from those research themes.
+
+- id: cousine
+  title: COUSINE explorer
+  url: /tools/cousine/
+  themes: [erw, models]
+  short: Enhanced rock weathering on farmland, scenario by scenario.
+  body: >-
+    Spread olivine, basalt or lime on a field and follow the CO₂ removed, the rock weathered and the soil pH
+    over 60 years. Compare rocks, application rates, nitrogen use, climates and soils, and see how the BINN
+    calibrated the model at three sites. Runs in the browser on the simulations of the COUpled Soil
+    Inorganic-organic carbon model for eNhanced wEathering (Tao & Houlton 2026, Journal of Advances in
+    Modeling Earth Systems).

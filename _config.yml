@@ -1,0 +1,60 @@
+# -----------------------------------------------------------------------------
+# Soil Intelligence Lab — site settings
+# -----------------------------------------------------------------------------
+title: Soil Intelligence Lab
+institution: Nanyang Technological University
+department: Asian School of the Environment
+description: >-
+  The Soil Intelligence Lab at the Asian School of the Environment, Nanyang
+  Technological University, fuses mechanistic models, big data and AI to
+  understand the global soil carbon cycle and find verifiable pathways for
+  carbon dioxide removal.
+
+# Published from the lab's GitHub organization, repository soilintelligencelab/soilintelligencelab.github.io,
+# at its root. For a custom domain, set url to that domain (baseurl stays "") and add a CNAME file.
+url: https://soilintelligencelab.github.io
+baseurl: ""
+
+email: feng.tao@ntu.edu.sg
+address:
+  - Asian School of the Environment
+  - Nanyang Technological University
+  - 50 Nanyang Avenue, Singapore 639798
+
+social:
+  scholar: https://scholar.google.com/citations?user=BlNzWiUAAAAJ
+  github: https://github.com/phxtao
+  linkedin: https://www.linkedin.com/in/feng-tao-626a44191
+  orcid: https://orcid.org/0000-0001-6105-860X
+
+# Names in publication author strings that are bolded as lab members.
+# Add students and postdocs here as they join, in the same "Last, I." format.
+lab_authors:
+  - Tao, F.
+
+# The COUSINE explorer (tools/cousine/, the only tool so far) is held back until Cornell's Center for Technology
+# Licensing clears it. While tools_public is false the Tools menu item and the "Try it" links on Research are hidden,
+# `tools` and `tools.html` are excluded from the build below, and .gitignore keeps tools/cousine/ out of the repository.
+# To publish it: set tools_public to true, delete those two exclude lines and the tools/cousine/ line in .gitignore.
+tools_public: false
+
+nav:
+  - { title: home, url: / }
+  - { title: research, url: /research/ }
+  - { title: tools, url: /tools/ }
+  - { title: people, url: /people/ }
+  - { title: publications, url: /publications/ }
+  - { title: press, url: /press/ }
+  - { title: news, url: /news/ }
+  - { title: teaching, url: /teaching/ }
+  - { title: openings, url: /openings/ }
+
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - tools        # COUSINE explorer, held back (see tools_public)
+  - tools.html   # held back with it

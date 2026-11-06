@@ -1,0 +1,78 @@
+# Research themes. `icon` is one of: horizons, rock, layers, network (see _includes/icon.html).
+# `papers` are the "Read more" links; a paper without a `url` (e.g. accepted, no DOI yet) is listed as plain text.
+
+- id: soc
+  icon: horizons
+  title: Soil organic carbon
+  short: Formation, persistence, and responses to climate change.
+  body: >-
+    Soil organic carbon is the largest actively cycling carbon pool on land, yet
+    we still lack a quantitative picture of how it forms, why some of it persists
+    for millennia, and how it will respond to warming and land management. We
+    combine global soil-profile and radiocarbon data with process-based models to
+    resolve these mechanisms at global scale.
+  topics:
+    - Global soil organic carbon age and turnover informed by radiocarbon data
+    - Soil microbial physiology — e.g., microbial carbon use efficiency and energy limitation — and its environmental controls
+    - Deep soil carbon sequestration and its limits
+  papers:
+    - { label: "Nature 2023 — microbial carbon use efficiency promotes global soil carbon storage", url: "https://doi.org/10.1038/s41586-023-06042-3" }
+    - { label: "Nature Geoscience 2026 — limited energy for microorganisms constrains soil carbon accrual", url: "https://doi.org/10.1038/s41561-026-02035-9" }
+    - { label: "Nature Communications 2024 — multiscale insights on microbial carbon use efficiency", url: "https://doi.org/10.1038/s41467-024-52160-5" }
+    - { label: "Global Change Biology 2024 — model convergence after data assimilation", url: "https://doi.org/10.1111/gcb.17297" }
+
+- id: erw
+  icon: rock
+  title: Enhanced rock weathering
+  short: Scalable, verifiable carbon dioxide removal.
+  body: >-
+    Spreading crushed silicate rock on farmland accelerates natural weathering
+    and can lock CO₂ away as inorganic carbon for thousands of years. We ask
+    what limits this process in real soils, where the captured carbon ends up,
+    and how organic and inorganic carbon interact — the science needed to
+    measure, report and verify removals.
+  topics:
+    - Key limitations on CO₂ sequestration by enhanced rock weathering (theory and data syntheses)
+    - Long-term fate of sequestered carbon across soil–river–ocean systems
+    - Interactions between soil organic and inorganic carbon
+    - Other soil-based carbon removal pathways, such as woody debris preservation
+  papers:
+    - { label: "JAMES 2026 (accepted) — COUSINE, a mechanistic model of CO₂ removal by enhanced rock weathering" }
+    - { label: "Global Change Biology 2024 — inorganic and organic synergies in enhanced weathering", url: "https://doi.org/10.1111/gcb.17132" }
+    - { label: "Science 2024 — size, distribution and vulnerability of global soil inorganic carbon", url: "https://doi.org/10.1126/science.adi7918" }
+    - { label: "Communications Sustainability 2026 — scaling up enhanced rock weathering equitably", url: "https://doi.org/10.1038/s44458-026-00034-w" }
+
+- id: models
+  icon: layers
+  title: Cross-scale carbon cycle models
+  short: From soil columns to Earth system models.
+  body: >-
+    We develop land carbon cycle models that couple organic and inorganic soil
+    carbon, link to Earth system models, and stay fast enough for data
+    assimilation and scenario analysis — so that management decisions can be
+    tested before they are deployed at scale.
+  topics:
+    - "COUSINE: a COUpled Soil Inorganic-organic carbon model for eNhanced wEathering, representing interactions with soil chemistry, biology and management"
+    - Matrix-based approaches for fast spin-up and uncertainty attribution in land models
+  papers:
+    - { label: "JAMES 2023 — matrix approach to accelerate CLM5 spin-up", url: "https://doi.org/10.1029/2023MS003625" }
+    - { label: "JAMES 2022 — matrix approach to land carbon cycle modeling", url: "https://doi.org/10.1029/2022MS003008" }
+
+- id: ai
+  icon: network
+  title: Process-guided AI
+  short: Interpretable AI and foundation models for biogeochemistry.
+  body: >-
+    Our AI is built to respect, and to discover, the physics and biology of
+    soils. We embed mechanistic models inside neural networks so that learned
+    parameters stay interpretable, and we are building PASCA — a Process-guided,
+    AI-assisted Soil Carbon foundAtion model for verifiable carbon dioxide removal.
+  topics:
+    - "PASCA: a process-guided, AI-assisted soil carbon foundation model"
+    - "BINN: Biogeochemistry-Informed Neural Networks"
+    - "ScIReN: Scientifically-Interpretable Reasoning Networks for discovering hidden relationships"
+    - "PRODA: PROcess-guided deep learning and DAta-driven modelling"
+  papers:
+    - { label: "Geoscientific Model Development 2026 — BINN v1.0", url: "https://doi.org/10.5194/gmd-19-6777-2026" }
+    - { label: "AAAI 2026 — ScIReN", url: "https://doi.org/10.1609/aaai.v40i45.41185" }
+    - { label: "Frontiers in Big Data 2020 — PRODA", url: "https://doi.org/10.3389/fdata.2020.00017" }
